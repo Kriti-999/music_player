@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#100F0F"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="408dp"
+        android:layout_height="408dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="2dp"
+
+            app:layout_column="0"
+            app:layout_row="0">
+
+            <Button
+                android:id="@+id/btn_mybutton1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#151414"
+                android:backgroundTint="#0C0C0C"
+                android:onClick="play"
+                android:tag="1"
+                android:text="PLAY"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+                android:foregroundGravity="fill_horizontal|center|fill_vertical"
+                android:scaleType="fitXY"
+                app:layout_column="0"
+                app:layout_row="0"
+                app:srcCompat="@drawable/music1" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="2dp"
+            app:layout_column="1"
+            app:layout_row="0">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+
+                android:scaleType="fitXY"
+                app:layout_column="1"
+                app:layout_row="0"
+                app:srcCompat="@drawable/music2" />
+
+
+            <Button
+                android:id="@+id/btn_mybutton2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#151414"
+                android:backgroundTint="#0C0C0C"
+                android:onClick="play"
+                android:tag="2"
+                android:text="PLAY"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="2dp"
+            app:layout_column="2"
+            app:layout_row="0">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+                android:scaleType="fitXY"
+                app:layout_column="2"
+                app:layout_row="0"
+                app:srcCompat="@drawable/music3" />
+
+
+            <Button
+                android:id="@+id/btn_mybutton3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#151414"
+                android:backgroundTint="#0C0C0C"
+                android:onClick="play"
+                android:tag="3"
+                android:text="PLAY"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="3dp"
+            app:layout_column="0"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/imageView6"
+
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+
+                android:scaleType="fitXY"
+                app:layout_column="0"
+                app:layout_row="1"
+                app:srcCompat="@drawable/music4" />
+
+            <Button
+                android:id="@+id/btn_mybutton4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#151414"
+                android:backgroundTint="#0C0C0C"
+                android:onClick="play"
+                android:tag="4"
+                android:text="PLAY"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="3dp"
+            app:layout_column="1"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+
+                android:scaleType="fitXY"
+                app:layout_column="1"
+                app:layout_row="1"
+                app:srcCompat="@drawable/music5" />
+
+            <Button
+                android:id="@+id/btn_mybutton5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#151414"
+                android:backgroundTint="#0C0C0C"
+                android:onClick="play"
+                android:tag="5"
+                android:text="PLAY"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="2dp"
+            app:layout_column="2"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+
+                android:scaleType="fitXY"
+                app:layout_column="2"
+                app:layout_row="1"
+                app:srcCompat="@drawable/music6" />
+
+            <Button
+                android:id="@+id/btn_mybutton6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#151414"
+                android:backgroundTint="#0C0C0C"
+                android:onClick="play"
+                android:tag="6"
+                android:text="PLAY"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="3dp"
+            app:layout_column="0"
+            app:layout_row="2">
+
+            <ImageView
+                android:id="@+id/imageView7"
+
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+
+                android:scaleType="fitXY"
+                app:layout_column="0"
+                app:layout_row="2"
+                app:srcCompat="@drawable/music7" />
+
+            <Button
+                android:id="@+id/btn_mybutton7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#151414"
+                android:backgroundTint="#0C0C0C"
+                android:onClick="play"
+                android:tag="7"
+                android:text="PLAY"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="3dp"
+            app:layout_column="1"
+            app:layout_row="2">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+
+                android:scaleType="fitXY"
+                app:layout_column="1"
+                app:layout_row="2"
+                app:srcCompat="@drawable/music8" />
+
+            <Button
+                android:id="@+id/btn_mybutton8"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#151414"
+                android:backgroundTint="#0C0C0C"
+                android:onClick="play"
+                android:tag="8"
+                android:text="PLAY"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="2dp"
+            app:layout_column="2"
+            app:layout_row="2">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+
+                android:scaleType="fitXY"
+                app:layout_column="2"
+                app:layout_row="2"
+                app:srcCompat="@drawable/music9" />
+
+            <Button
+                android:id="@+id/btn_mybutton9"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#151414"
+                android:backgroundTint="#0C0C0C"
+                android:onClick="play"
+                android:tag="9"
+                android:text="PLAY"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="serif"
+        android:text="🥁  BAJAOO"
+        android:textAlignment="center"
+        android:textColor="#BAA6A6"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="sans-serif-black"
+        android:onClick="pause"
+        android:text="PAUSE"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:inputType="textPersonName"
+        android:text="🎺 music on air 🎶"
+        android:textAlignment="center"
+        android:textColor="#DCD6D6"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
